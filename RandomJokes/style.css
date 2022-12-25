@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(118, 93, 143);
+    border: 10px solid wheat;
+    margin: 9rem auto;
+    transition: all 1s ease-in-out;
+}   
+
+header{
+    /* background-color: yellow; */
+    border: 3px solid wheat;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.jokeArea {
+    /* background-color: violet; */
+    display: flex;
+}
+
+.jokeArea [name="jokes"]{
+    width: 40vw;
+    /* background-color: aqua; */
+    box-shadow: 5px 5px 0 rgba(27, 27, 40, 0.5);
+    margin: 2rem auto;
+    font-size: 1rem;
+}
+
+.jokeCreator{
+    width: 50vw;
+    display: flex;
+}
+
+.jokeCreator .newJoke{
+    margin: 3rem auto;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 10%;
+    font-size: 16px;
+}
+
