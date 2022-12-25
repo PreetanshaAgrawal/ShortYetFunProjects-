@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container .circle {
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    /* margin-top: 20px;
+    margin: auto; */
+    /* background-color: wheat; */
+    border: 1rem solid grey;
+}
+
+.circle .countDown{
+    /* background-color: white; */
+    height: inherit;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: wheat;
+}
+
+.controls {
+    display: flex;
+}
+
+.controls .start .startactive {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgb(156, 156, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .start .startactive{
+    width: inherit;
+    height: inherit;
+    
+} */
+
+.controls .pause .pauseactive {
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgb(156, 156, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .reset .resetactive{
+    position: absolute;
+    top: 70%;
+    left: 59%;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgb(156, 156, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
