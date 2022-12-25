@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    background: rgb(2, 0, 35);
+    background: linear-gradient(90deg, rgba(2, 0, 35 ,1) 0%, rgb(39, 39, 162) 35%, rgb(0, 208, 244) 100%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container{
+    width: 50vw;
+    height: 25vh;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10rem auto; 
+    border: 0.5rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.6em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #5c5ef9,
+              0 0 0.8rem #5c5ef9,
+              0 0 2.8rem #5c5ef9,
+              inset 0 0 1.3rem #5c5ef9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.digital{
+
+    font-size: 4rem;
+    color: #a7a9ed;
+}
+
