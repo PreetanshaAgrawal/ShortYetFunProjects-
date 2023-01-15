@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(46, 46, 111);
+}
+
+.container {
+    width: 90vw;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.6rem;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(160, 160, 244);
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.keyboard div {
+    width: 100%;
+    height: 20vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem;
+}
+
+.keyboard button {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(125, 139, 241);
+    border-radius: 3em;
+    margin: 0.5rem;
+    font-size: 20px;
+}
+
+.keyboard button:disabled {
+    /* border: 3px solid black; */
+    background-color: #a6a3e0;
+}
+
+.options {
+    text-align: center;
+}
+
+.options div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.6em;
+}
+
+.options button {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(125, 139, 241);
+    border-radius: 1em;
+    margin: 0.5rem;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.options button:disabled {
+    /* border: 3px solid black; */
+    background-color: #a6a3e0;
+}
+
+.options button.active {
+    /* border: 3px solid black; */
+    background-color: #8c52ff;
+}
+
+.new-game-popup {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.6em;
+}
+
+.hangMan {
+    display: block;
+    margin: auto;
+    border: 10px solid #5869ca;
+    border-radius: 10px;
+}
+
+.userInput {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin: 0.6em 0 1.4em 0;
+}
+
+.resultText h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.resultText p {
+    font-size: 1.65em;
+    margin: 1em 0 2em 0;
+}
+
+.resultText span {
+    font-weight: 600;
+}
+
+.playAgain{
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    background-color: #8c52ff;
+    border: 3px solid #000000;
+    color: #fff;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.win-msg {
+    color: #39d78d;
+}
+
+.lose-msg {
+    color: #fe5152
+}
