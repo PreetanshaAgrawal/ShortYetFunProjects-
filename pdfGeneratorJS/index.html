@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLToPdfGeneratorPreetansha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <input type="url" class="contentContainer" placeholder="Enter the url here"> -->
+    <!-- <button class="search">search</button> -->
+
+    <div class="contentContainer">
+        <p>Print whatever is written here</p>
+    </div>
+    <button onclick="generatePdf()">Generate pdf using html2pdf</button>
+
+    <!-- open source library html2pdf in js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <!-- <script src="es6-promise.auto.min.js"></script>
+    <script src="jspdf.min.js"></script>
+    <script src="html2canvas.min.js"></script>
+    <script src="html2pdf.min.js"></script> -->
+
+
+    <script>
+        const element = document.querySelector('.contentContainer');
+        const search = document.querySelector('.search');
+        search.addEventListener('click',
+
+            () => {
+                var theUrl = element.value;
+                console.log(theUrl);
+                function httpGet(theUrl) {
+
+                    var xmlHttp = new XMLHttpRequest();
+                    xmlHttp.open("GET", theUrl);
+                    xmlHttp.responseType = 'text';
+                    xmlHttp.send();
+                    console.log(xmlHttp.response.innerHTML);
+                }
+
+                httpGet(theUrl);
+            }
+        )
+
+        function generatePdf() {
+            var opt = {
+                margin: 1,
+                filename: 'myfile.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 5 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save();
+        }
+
+    </script>
+
+</body>
+
+</html>
